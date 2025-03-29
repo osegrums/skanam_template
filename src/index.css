@@ -1,0 +1,142 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 215 35% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 215 35% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 215 35% 15%;
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 210 4% 43%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 210 4% 96%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 210 100% 50%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 215 32% 92%;
+  --input: 215 32% 92%;
+  --ring: 210 100% 50%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 222 18% 7%;
+  --foreground: 0 0% 88%;
+  --card: 222 18% 11%;
+  --card-foreground: 0 0% 88%;
+  --popover: 222 18% 7%;
+  --popover-foreground: 0 0% 88%;
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 210 4% 43%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 215 25% 20%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 210 100% 50%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 217 19% 27%;
+  --input: 217 19% 27%;
+  --ring: 210 100% 50%;
+}
+
+/* Base styles */
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 200ms;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/* Utility classes */
+.glass {
+  background-color: rgb(255 255 255 / 0.7);
+  backdrop-filter: blur(16px);
+  border-width: 1px;
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.dark .glass {
+  background-color: rgb(3 7 18 / 0.7);
+  border-color: rgb(31 41 55 / 0.2);
+}
+
+.heading-xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .heading-xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.heading-lg {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .heading-lg {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.heading-md {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .heading-md {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
